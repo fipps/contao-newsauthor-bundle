@@ -29,8 +29,7 @@ class Plugin implements BundlePluginInterface
         return [
             BundleConfig::create(FippsNewsauthorBundle::class)->setLoadAfter(
                 [
-                    ContaoCoreBundle::class,
-                    ContaoNewsBundle::class
+                    ContaoCoreBundle::class
                 ]
             )
         ];
@@ -61,6 +60,6 @@ class Plugin implements BundlePluginInterface
      */
     public function getPackageDependencies()
     {
-        return [];
+        return [ContaoNewsBundle::class];
     }
 }

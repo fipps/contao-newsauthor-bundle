@@ -146,8 +146,6 @@
  * Use function array_insert() to modify an existing hooks array.
  */
 
-$GLOBALS['TL_HOOKS']['initializeSystem'][] = array(\Fipps\NewsauthorBundle\Listener\HooksListener::class, 'onInitializeSystem');
-
 /**
  * -------------------------------------------------------------------------
  * PAGE TYPES
